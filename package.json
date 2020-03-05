@@ -9,7 +9,7 @@
     "server": "nodemon server.js",
     "client": "yarn --cwd client start",
     "dev": "concurrently \"nodemon server.js\" \"yarn run client\"",
-    "heroku-postbuild": "YARN_PRODUCTION=false yarn --cwd client add && yarn --cwd client run build"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false YARN_PRODUCTION=false yarn --cwd client add && yarn --cwd client run build"
   },
   "author": "Alexa Hayes",
   "license": "MIT",
